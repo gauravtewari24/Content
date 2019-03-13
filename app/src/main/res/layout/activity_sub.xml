@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top1"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:id="@+id/title"
+        android:fontFamily="@font/quicksand_bold"
+        android:padding="10dp"
+        android:text="Beauty Of Nature"
+        android:textColor="@android:color/background_dark"
+
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/views"
+        android:text="203K views"
+        android:textSize="14sp"
+        android:padding="10dp"
+
+        />
+    <android.support.v7.widget.CardView
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/views"
+        app:cardMaxElevation="6dp"
+        android:id="@+id/cardview"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="10dp"
+                android:padding="14dp"
+                android:src="@drawable/likea"
+
+                />
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:padding="14dp"
+                android:src="@drawable/dislikea"
+
+                />
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/share"
+                android:padding="14dp"
+
+                />
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:padding="14dp"
+                android:src="@drawable/download"
+
+                />
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:padding="14dp"
+                android:src="@drawable/playlistadd"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/cardview"
+        android:padding="8dp"
+        android:src="@drawable/logo"
+        android:id="@+id/logosub"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Earth"
+        android:layout_toRightOf="@+id/logosub"
+        android:layout_below="@+id/cardview"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:textSize="19dp"
+        android:id="@+id/channelname"
+
+        android:textColor="@android:color/background_dark"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="755K subscribers"
+        android:layout_below="@+id/cardview"
+        android:layout_toRightOf="@id/channelname"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/peoples"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/channelname"
+        android:layout_toRightOf="@+id/logosub"
+        android:text="SUBSCRIBE"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:id="@+id/subscribe"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/subscribe"
+        android:layout_below="@+id/peoples"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/holo_blue_dark"
+
+
+
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:id="@+id/comment"
+        android:layout_below="@+id/logosub"
+        android:text="Add a public Comment....."
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment"
+        android:layout_marginLeft="280dp"
+        android:text="submit"
+        android:id="@+id/submit"
+        />
+
+</RelativeLayout>
